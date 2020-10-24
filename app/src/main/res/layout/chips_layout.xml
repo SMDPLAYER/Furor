@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:id="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Filter"/>
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_arrow_back"
+            android:layout_height="?actionBarSize"/>
+        <TextView
+            android:id="@+id/textPriority"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_height="wrap_content"
+            android:text="Priority"/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ChipsPriority"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPriority"
+            >
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ChipsPriority1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Низкий" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ChipsPriority2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Средний" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ChipsPriority3"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Высокий" />
+        </com.google.android.material.chip.ChipGroup>
+        <TextView
+            android:id="@+id/textType"
+            app:layout_constraintTop_toBottomOf="@id/ChipsPriority"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_height="wrap_content"
+            android:text="Type"/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ChipsType"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textType"
+            > <com.google.android.material.chip.Chip
+            android:id="@+id/chipTpe0"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="import" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTpe1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Новый функционал" />
+            <com.google.android.material.chip.Chip
+
+                android:id="@+id/chipTpe2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Исправление" />
+
+
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTpe3"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Улучшение" />
+        </com.google.android.material.chip.ChipGroup>
+        <TextView
+            android:id="@+id/textStatus"
+            app:layout_constraintTop_toBottomOf="@id/ChipsType"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_height="wrap_content"
+            android:text="Status"/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ChipsStatus"
+            android:layout_width="0dp"
+
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textStatus"
+            >
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Новый" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Назначен исполнитель"
+                />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus3"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Принят исполнителем" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В процессе" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus5"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="На паузе" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus6"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="На проверке" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus7"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Возвращен на доработку" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipstatus8"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выполнен" />
+
+        </com.google.android.material.chip.ChipGroup>
+        <TextView
+
+            android:text="Filter"
+            style="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintTop_toBottomOf="@id/ChipsStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/buttonFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/circular_blue_solid"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+
+
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Filter"-->
+        <!--        style="@style/TextAppearance.AppCompat.Title"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/ChipsStatus"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

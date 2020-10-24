@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+  <RelativeLayout
+      android:id="@+id/noInternet"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="#FFFFFF"
+        android:src="@drawable/den2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Try Again"
+        android:layout_margin="30dp"
+        android:gravity="bottom|center"
+        style="@style/TextAppearance.AppCompat.Title"/>
+  </RelativeLayout>
+
+
+  <FrameLayout
+      android:id="@+id/layoutFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+/>
+  <LinearLayout
+      android:id="@+id/loader_progress"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#54000000"
+      android:clickable="true"
+      android:focusable="true"
+
+      android:gravity="center"
+      android:visibility="gone">
+
+    <ProgressBar
+
+        android:id="@+id/loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+
+</RelativeLayout>
